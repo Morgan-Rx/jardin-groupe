@@ -1,6 +1,8 @@
 #bar {
     display: flex;
     gap: 3em;
+    justify-content: space-around;
+    align-items: center;
 }
 .image {
     width: 52px;
@@ -15,4 +17,18 @@
     left: -53px;
     top: 0;
     max-width: none;
+}
+
+.arroser {
+    padding: 0.8rem 1.5rem;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    display: inline-block;
 }
