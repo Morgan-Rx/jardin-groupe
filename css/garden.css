@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
 }
 #grid {
-    margin-top: 18em;
+    margin-top: 8em;
     margin-left: 15em;
     width: 32em;
     height: 12em;
@@ -11,8 +11,8 @@ body {
     flex-wrap: wrap;
 }
 .square {
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     border: 1px dotted rgb(3, 146, 3, 25%);
 }
 .square:hover {

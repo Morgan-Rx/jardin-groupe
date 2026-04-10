@@ -1,0 +1,18 @@
+#bar {
+    display: flex;
+    gap: 3em;
+}
+.image {
+    width: 52px;
+    height: 156px;
+    position: relative;
+    overflow: hidden;
+}
+.image img {
+    position: absolute;
+    width: 178px;
+    height: 106px;
+    left: -53px;
+    top: 0;
+    max-width: none;
+}
