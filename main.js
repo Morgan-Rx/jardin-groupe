@@ -14,13 +14,27 @@ import * as Globals from './js/variables.js'
 
         const gridDiv = document.getElementById("grid");
 
-        for (let i = 0; i <= (gridSize[0]*gridSize[1]); i++) {
-            const fragment = document.createElement("div");
+        function openPopup(id, y, x) {
+            
+        }
 
-            console.log(i);
-            fragment.innerHTML = "";
-            fragment.className = "square";
-            gridDiv.appendChild(fragment);
+        for (let i = 0; i <= gridSize[1]; i++) {
+
+            for (let h = 0; h <= gridSize[0]; h++) {
+
+                const fragment = document.createElement("div");
+                fragment.setAttribute("data-id", i*h);
+                fragment.setAttribute("data-row", i);
+                fragment.setAttribute("data-pos", h);
+                fragment.addEventListener("click",  function() {
+                    openPopup(i*h, i, h);    
+                })
+                console.log(i);
+                fragment.innerHTML = "";
+                fragment.className = "square";
+                gridDiv.appendChild(fragment);
+            }
+            
         }
     }
     else setTimeout(arguments.callee, 100);

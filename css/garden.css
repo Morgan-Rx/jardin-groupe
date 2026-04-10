@@ -19,3 +19,7 @@ body {
     background-color: rgb(238, 247, 255, 5%) ;
     cursor: pointer;
 }
+#popup {
+    border-radius: 10px;
+    background-color: aquamarine;
+}
